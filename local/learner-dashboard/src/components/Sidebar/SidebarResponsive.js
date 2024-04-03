@@ -17,7 +17,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import IconBox from "components/Icons/IconBox";
-import { CreativeTimLogo } from "components/Icons/Icons";
+import logo from "../../assets/img/logo_sakau.png";
 import { Separator } from "components/Separator/Separator";
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
@@ -200,7 +200,7 @@ function SidebarResponsive(props) {
         alignItems="center"
         fontSize="11px"
       >
-        {/* <CreativeTimLogo w="32px" h="32px" me="10px" /> */}
+        <Image src={logo} w="32px" h="62px" alt="Logo" me="200px" />
         <Text fontSize="sm" mt="3px">
           {logoText}
         </Text>
