@@ -3,7 +3,6 @@ import {
   Flex,
   Text,
   useColorModeValue,
-  IconButton,
   Input,
   InputGroup,
   InputLeftElement,
@@ -12,9 +11,7 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
-import DashboardTableRow from "components/Tables/DashboardTableRow";
 import React from "react";
-import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 
 // Courses Component
 const Courses = ({ title, amount, captions, data }) => {
@@ -30,7 +27,7 @@ const Courses = ({ title, amount, captions, data }) => {
       <Flex position="absolute" top="4" right="4">
         <SearchBar />
       </Flex>
-      <CardHeader p="12px 0px 28px 0px">
+      <CardHeader p="12px 0px 28px 10px">
         <Flex direction="column">
           <Text fontSize="lg" color={textColor} fontWeight="bold" pb=".5rem">
             {title}

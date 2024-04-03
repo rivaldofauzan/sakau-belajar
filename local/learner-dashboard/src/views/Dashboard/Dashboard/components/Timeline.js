@@ -12,7 +12,7 @@ const Timeline = ({ title }) => {
 
   return (
     <Card maxH="100%">
-      <CardHeader p="22px 0px 35px 14px">
+      <CardHeader p="12px 0px 28px 14px">
         <Flex direction="column">
           <Text fontSize="lg" color={textColor} fontWeight="bold" pb=".5rem">
             {title}
