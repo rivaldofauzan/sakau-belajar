@@ -1,4 +1,4 @@
-bisi folder mfenya nggak kebuka, yg diubah di index.sjx:
+Bisi folder mfenya nggak kebuka, yg diubah di index.sjx:
 
 import { BrowserRouter, Switch, Redirect } from "react-router-dom";
 import LearnerLayout from "./containers/sakau-belajar/local/learner-dashboard/src/layouts/Learner.js";
@@ -13,4 +13,6 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
+-----------------------------------------------------------------------------------------------------------------------
 
+Clone Submodule: git clone --recurse-submodules 
