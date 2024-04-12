@@ -15,4 +15,4 @@ ReactDOM.render(
 
 -----------------------------------------------------------------------------------------------------------------------
 
-Clone Submodule: git clone --recurse-submodules 
+Clone Submodule: git clone --recurse-submodules https://github.com/rivaldofauzan/sakau-belajar.git
