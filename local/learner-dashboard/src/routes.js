@@ -5,6 +5,8 @@ import Reports from "views/Dashboard/Reports";
 import File_Storage from "views/Dashboard/File_Storage";
 import Inbox from "views/Dashboard/Inbox";
 import Settings from "views/Dashboard/Settings";
+import Temanbelajar from "views/Dashboard/Temanbelajar";
+import Catatan_Belajar from "views/Dashboard/Catatan_Belajar";
 
 import {
   FiHome,
@@ -51,6 +53,20 @@ var dashRoutes = [
     component: Inbox,
     layout: "/learner",
   },
+  {
+    path: "/temanbelajar",
+    name: "Teman belajar",
+    icon: <FiSettings />,
+    component: Temanbelajar,
+    layout: "/learner",
+  },
+  // {
+  //   path: "/catatan-belajar",
+  //   name: "Catatan Belajar",
+  //   icon: <FiEdit3 />,
+  //   component: Catatan_Belajar,
+  //   layout: "/learner",
+  // },
   {
     path: "/settings",
     name: "Settings",
