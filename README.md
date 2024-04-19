@@ -1,18 +1,15 @@
-Bisi folder mfenya nggak kebuka, yg diubah di index.sjx:
+## CLone Folder local/frontend-learner-dashboard
 
-import { BrowserRouter, Switch, Redirect } from "react-router-dom";
-import LearnerLayout from "./containers/sakau-belajar/local/learner-dashboard/src/layouts/Learner.js";
+git clone https://github.com/rivaldofauzan/sakau-belajar.git
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path={`/learner`} component={LearnerLayout} />
-      <Redirect from={`/`} to="/learner/dashboard" />
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+---
 
------------------------------------------------------------------------------------------------------------------------
+cd local/frontend-learner-dashboard
 
-Clone Submodule: git clone --recurse-submodules https://github.com/rivaldofauzan/sakau-belajar.git
+---
+
+npm i
+
+---
+
+npm run dev
