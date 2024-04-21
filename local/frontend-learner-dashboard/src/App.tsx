@@ -27,8 +27,8 @@ const DashboardLearnerLayout = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 text-left mx-auto p-4">
-        <div className="flex items-center"> {/* Container untuk teks dan handicon */}
+      {/* <div className="flex-1 text-left mx-auto p-4">
+        <div className="flex items-center">
           <h1 className="text-2xl font-semibold mt-12 mr-3">Selamat Datang, Aini!</h1>
           <img
             src={handIcon}
@@ -38,7 +38,8 @@ const DashboardLearnerLayout = () => {
         </div>
         <h3 className="font-semibold mb-3 text-gray-500">Selamat Belajar!</h3> 
         <Outlet />
-      </div>
+      </div> */}
+      <DashboardLearner />
     </div>
   );
 };
@@ -64,8 +65,8 @@ const App = () => {
       <DiscussionProvider>
         <Routes>
           {/* <Route path="/" element={<Layout />}> */}
-            {/* <Route index element={<div>Dashboard Component</div>} /> */}
-            <Route path="/" element={<DashboardLearnerLayout />}>
+          {/* <Route index element={<div>Dashboard Component</div>} /> */}
+          <Route path="/" element={<DashboardLearnerLayout />}>
             <Route path="quiz" element={<div>Quiz Component</div>} />
             <Route
               path="studynotes"
