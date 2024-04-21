@@ -16,6 +16,15 @@ const DashboardLearner = () => {
                 </div>
                 <h3 className="font-semibold mb-3 text-gray-500">Selamat Belajar!</h3>
                 <Outlet />
+                <div>
+                    Halooo
+                </div>
+                <div>
+                    PPPPP
+                </div>
+                <div>
+                    Cek 123 Cek Cek
+                </div>
             </div>
         </div>
     )
