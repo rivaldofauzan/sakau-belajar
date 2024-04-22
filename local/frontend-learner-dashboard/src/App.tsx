@@ -8,19 +8,8 @@ import ThreadList from "./components/custom/ThreadList";
 import { DiscussionProvider } from "./DiscussionContext";
 import ReportList from "./components/custom/ReportList";
 import Sidebar from "./components/custom/Sidebar";
-import handIcon from "./assets/waving_hand.svg";
-
-// // Define a generic layout structure with the sidebar and outlet
-// const Layout = () => {
-//   return (
-//     <div className="flex">
-//       <Sidebar />
-//       <div className="flex-1 text-left mx-auto p-4">
-//         <Outlet />
-//       </div>
-//     </div>
-//   );
-// };
+import Badge from "./components/custom/Badge";
+import Capaian from "./components/custom/Capaian";
 
 // Define a specific layout for forum discussion with its own heading
 const DashboardLearnerLayout = () => {
@@ -44,7 +33,6 @@ const DashboardLearnerLayout = () => {
   );
 };
 
-
 // Define a specific layout for forum discussion with its own heading
 const ForumLayout = () => {
   return (
@@ -53,6 +41,28 @@ const ForumLayout = () => {
       <div className="flex-1 text-left mx-auto p-4">
         <h1 className="text-4xl font-semibold mb-5">Forum Diskusi</h1>
         <Outlet />
+      </div>
+    </div>
+  );
+};
+
+const TimelineLayout = () => {
+  return (
+    <div className="flex">
+      <div className="flex-1 text-left mx-auto p-4">
+        <h1 className="text-4xl font-semibold mb-5">Timeline</h1>
+        <Badge
+          nama="John Doe"
+          tanggalPenyelesaian="April 20, 2024"
+          namaBadge="Badge Name"
+          fotoSrc="url/to/image.jpg"
+        />
+        <Capaian
+          nama="John Doe"
+          tanggalPenyelesaian="20 April 2024"
+          namaCourse="Belajar React"
+          fotoSrc="https://example.com/foto.jpg"
+        />
       </div>
     </div>
   );
@@ -74,10 +84,7 @@ const App = () => {
             />
             <Route path="reports" element={<div>Reports Component</div>} />
             <Route path="inbox" element={<div>Inbox Component</div>} />
-            <Route
-              path="findfriends"
-              element={<div>Find Friends Component</div>}
-            />
+            <Route path="findfriends" element={<TimelineLayout />}></Route>
             <Route path="settings" element={<div>Settings Component</div>} />
           </Route>
           <Route path="discussion" element={<ForumLayout />}>
