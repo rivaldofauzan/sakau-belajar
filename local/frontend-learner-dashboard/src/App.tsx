@@ -2,7 +2,7 @@
 
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import "./App.css";
-import DashboardLearner from "./components/custom/DashboardLearner";
+import DashboardLearner from "./components/custom/DashboardLearnerCourse";
 import Discussion from "./components/custom/Discussion";
 import ThreadList from "./components/custom/ThreadList";
 import { DiscussionProvider } from "./DiscussionContext";
